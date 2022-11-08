@@ -8,10 +8,14 @@ import { ResourceData } from '../../data/resource-data';
 })
 export class CarouselCardComponent implements OnInit {
   @Input() resource:ResourceData;
+  cardLink: string; 
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit() {
+   this.cardLink = `/${this.resource.category}/${this.resource.id}`
   }
 
 }

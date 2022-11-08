@@ -15,6 +15,7 @@ import { ArtistPageComponent } from './pages/artist-page/artist-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TrackPageComponent } from './pages/track-page/track-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { TrackPageComponent } from './pages/track-page/track-page.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
