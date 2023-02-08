@@ -1,22 +1,47 @@
-<div *ngIf="album" class="row">
-	<div class="col-6">
-		<!--TODO: populate with album name-->
-		<h1>{{album.name}}</h1>
-		<!--TODO: set src to album image URL-->
-		<img id="albumImg" [src] = "album.imageURL">
-		<!--TODO: loop over album artists-->
-		<p *ngFor="let artist of album.artists">
-			<!--TODO: link to artist page, display artist name-->
-			Artist: <a href="artist/{{artist.id}}">{{artist.name}}</a>
-		</p>
-		<p>
-			<!--TODO: link to album page on spotify, display album name-->
-			<a class="btn btn-light" role="button" target="_blank" [href]="album.url">Open {{album.name}} on Spotify</a>
-		</p>
-	</div>
-	<div class="col-6">
-		<h3>Album Tracks</h3>
-		<!--TODO: display the track list for the album. Hide the artist and album columns because they are redundant on this page.-->
-		<app-track-list hideArtist="true" hideAlbum="true" [tracks]="tracks"></app-track-list>
-	</div>
+<div *ngIf="album" class="album-page">
+  <div class="album-profile">
+    <!--TODO: set src to album image URL-->
+    <img id="albumImg" [src]="album.imageURL" />
+    <div class="album-description">
+      <!--TODO: populate with album name-->
+      <h4>Album</h4>
+      <h1>{{ album.name }}</h1>
+      <!--TODO: loop over album artists-->
+      <p *ngFor="let artist of album.artists">
+        <!--TODO: link to artist page, display artist name-->
+        Artist: <a href="artist/{{ artist.id }}">{{ artist.name }}</a>
+      </p>
+      <p>
+        <!--TODO: link to album page on spotify, display album name-->
+        <a
+          class="btn btn-light"
+          role="button"
+          target="_blank"
+          [href]="album.url"
+          >Open {{ album.name }} on Spotify</a
+        >
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="album-detail">
+    <div class="album-additional-info">
+      <h5>Label: {{album.label}}</h5>
+      <h5>Release Date: {{ album.release_date }}</h5>
+      <h5>Total tracks: {{album.total_tracks}}</h5>
+      <h5>Popularity: {{album.popularity}}</h5>
+
+    </div>
+    <div class="album-track col-6">
+      <h3>Album Tracks</h3>
+      <!--TODO: display the track list for the album. Hide the artist and album columns because they are redundant on this page.-->
+      <app-track-list
+        hideArtist="true"
+        hideAlbum="true"
+        [tracks]="tracks"
+      ></app-track-list>
+    </div>
+  </div>
 </div>

@@ -1,7 +1,30 @@
 .carousel {
-	width: 400px;
+  width: 400px;
+  padding-bottom: 40px;
+}
+.carousel.slide.carousel-fade {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+app-artist {
+  vertical-align: middle;
 }
 
-app-artist {
-	vertical-align: middle;
+.carousel-inner {
+  width: 300px;
+  height: 300px;
 }
+
+.carousel-control-prev {
+  position: absolute;
+  top: 0px;
+  left: calc(100vw / 2 - 500px);
+}
+
+.carousel-control-next {
+  position: absolute;
+  top: 0px;
+  right: calc(100vw / 2 - 500px + 20px);
+}
+

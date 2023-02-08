@@ -1,7 +1,96 @@
-input {
-	margin: 10px;
+.search-bar {
+  margin: 10px;
 }
 
 select {
-	margin: 10px;
+  margin: 10px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#inputState {
+  margin: 0px;
+}
+
+.form-control.ng-untouched.ng-pristine.ng-valid,
+.form-control.ng-touched.ng-pristine.ng-valid, .form-control.ng-valid.ng-dirty.ng-touched, .form-control.ng-valid.ng-dirty.ng-untouched {
+  border-radius: 30px;
+  margin: 0px;
+  height: 60px; 
+  text-align: center;
+  font-size: 20px; 
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 30px; 
+  color:white;
+}
+
+.col-2.search-bar {
+  /* flex-grow: 1; */
+}
+
+.col-7.search-option {
+  /* flex-grow: 3; */
+}
+
+.btn.btn-primary.btn-lg {
+  border-radius: 30px;
+  width: 200px; 	
+  height: 60px; 
+  margin-top: 30px; 
+  margin-bottom: 60px; 
+  background-image: linear-gradient(to right, #D38312 0%, #A83279  51%, #D38312  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border: none;
+}
+.btn.btn-primary.btn-lg:hover{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-btn-container{
+	display: flex; 
+	width: 100%; 
+	justify-content:center;
+
+}
+
+.form-row{
+	justify-content: center;
+}
+
+
+
+         
+         
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #D38312 0%, #A83279  51%, #D38312  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }

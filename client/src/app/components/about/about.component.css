@@ -1,3 +1,54 @@
 img {
 	max-width: 400px;
 }
+
+.about-component{
+	display: flex; 
+	align-items: center;
+	flex-direction: column;
+	padding-top: 50px; 
+	
+}
+
+.about-title{
+	margin-bottom: 40px; 
+}
+
+.profile-pic-container{
+	width: 300px; 
+	height: 300px; 
+	margin-bottom: 30px; 
+	
+}
+
+.profile-pic-container img{
+	border-radius: 50%;
+	object-fit: cover;
+	width: 100%; 
+	height: 100%; 
+
+	
+}
+
+.carousel-control-prev-icon, .sr-only{
+	font-size: 30px;
+	color: black 
+}
+
+
+.btn.btn-light {
+	display: block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 10px 20px;
+
+	background: #fff; /* fallback color for old browsers */
+	background: rgba(255, 255, 255, 0.148);
+	border-radius: 20px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+
+	transition: all 0.3s ease-out;
+  }
+  

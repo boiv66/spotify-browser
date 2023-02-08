@@ -1,3 +1,26 @@
-nav {
-	margin-bottom: 20px;
+.navbar-container {
+	
+	background-color: rgba(0,0,0,0.6);
+	
+}
+
+.container-fluid{
+	margin: 0; 
+	padding: 0; 
+}
+.navbar.navbar-expand-lg.sticky-top.navbar-dark{
+	height: 80px;
+
+}
+.navbar-nav.mr-auto.navbar-right{
+	position: absolute; 
+	right: 400px; 
+	
+}
+
+.btn.btn-dark{
+	border-radius: 15px;
+	font-size: 20px; 
+	padding: 10px 55px; 
+
 }

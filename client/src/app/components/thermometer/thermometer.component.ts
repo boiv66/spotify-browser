@@ -11,6 +11,7 @@ export class ThermometerComponent implements OnInit {
   //TODO: define Input fields and bind them to the template.
   @Input() feature: TrackFeature;
   color: string; 
+  percent: string; 
   
 
 
@@ -20,6 +21,7 @@ export class ThermometerComponent implements OnInit {
   ngOnInit() {
   
   this.color = this.feature.color; 
+  this.percent = (this.feature.percent*100).toString() + "%" 
   }
 
 }

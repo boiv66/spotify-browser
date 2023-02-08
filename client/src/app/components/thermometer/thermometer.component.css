@@ -1,7 +1,7 @@
 .progress {
 	margin: 10px;
 	height: 20px;
-	overflow: visible;
+	/* overflow: visible; */
 }
 
 .progress-bar .progress-bar-text {

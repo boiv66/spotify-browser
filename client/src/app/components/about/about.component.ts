@@ -16,8 +16,13 @@ export class AboutComponent implements OnInit {
   //TODO: inject the Spotify service
   constructor(private http: SpotifyService, private elementRef: ElementRef) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     // this.elementRef.nativeElement.querySelector('btn btn-light').adEventListener('click', this.fetchData); 
+    this.data = await this.http.aboutMe(); 
+    console.log(this.data); 
+    this.name = this.data.name; 
+    this.profile_pic = this.data.imageURL; 
+    this.profile_link = this.data.spotifyProfile; 
   }
 
   async fetchData(){

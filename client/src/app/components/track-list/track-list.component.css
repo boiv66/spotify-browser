@@ -1,0 +1,12 @@
+.table-content tr{
+    height: 60px; 
+
+}
+.table-content tr td{
+   
+}
+
+.table.table-hover{
+    z-index: 3;
+    position: relative; 
+}
